@@ -96,13 +96,13 @@ def register():
 
 def chatcolor(role):
     colors = {
-        "User": "#FFFFFF",
+        "User": "#000000",
         "VIP": "#FFD700",  # Gold
         "Moderator": "#00FF00",  # Green
         "Admin": "#FF0000",  # Red
-        "Developer": "#FF0000"  # Magenta
+        "Developer": "#0000FF"  # Magenta
     }
-    return colors.get(role, "#FFFFFF")
+    return colors.get(role, "#000000")
 
 def chat1():
     colored_header(label="Chatbox 1", description="Chat with other users here!", color_name="red-70")
