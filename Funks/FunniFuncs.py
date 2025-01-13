@@ -473,6 +473,19 @@ def devcoineditor():
                     moneygivenordeducted = True
                     st.success("Coins deducted!")
                     break
+
+        for devuser in devaccount:
+            if usertogive == devuser["devusername"]:
+                if addordeduct == "Add":
+                    devuser["balance"] += howmany
+                    moneygivenordeducted = True
+                    st.success("Coins given!")
+                    break
+                elif addordeduct == "Deduct":
+                    devuser["balance"] -= howmany
+                    moneygivenordeducted = True
+                    st.success("Coins deducted!")
+                    break
         
         if not moneygivenordeducted:
             st.error("User not found!")
