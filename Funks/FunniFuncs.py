@@ -475,7 +475,7 @@ def devcoineditor():
                     break
 
         for devuser in devaccount:
-            if usertogive == devuser["devusername"]:
+            if usertogive == devuser["developerusername"]:
                 if addordeduct == "Add":
                     devuser["balance"] += howmany
                     moneygivenordeducted = True
